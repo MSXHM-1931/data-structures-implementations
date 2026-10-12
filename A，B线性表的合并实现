@@ -1,4 +1,3 @@
-//A，B集合的合并实现
 void union(List &La, List Lb) {
 La_len = ListLength(La); Lb_len = ListLength(Lb);
 for (int i = 1; i <= Lb_len; i++) {
