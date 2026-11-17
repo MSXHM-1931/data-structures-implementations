@@ -10,5 +10,3 @@ Status GetElem_L(LinkList L, int i, ElemType &e)
         return ERROR;
     e = p->data;                     // 取第 i 个元素
 return OK;
-实验内容3：
-LinkList LocateElem_L(LinkList L, int sno)
