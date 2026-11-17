@@ -1,0 +1,14 @@
+Status GetElem_L(LinkList L, int i, ElemType &e)
+{
+    LinkList p = L->next;
+    int j = 1;                       // j 为计数器，从首元结点开始
+    while (p && j < i) {             // 顺指针向后查找，直到 p 指向第 i 个元素或 p 为空
+        p = p->next;
+        ++j;
+    }
+    if (!p || j > i)                 // 第 i 个元素不存在
+        return ERROR;
+    e = p->data;                     // 取第 i 个元素
+return OK;
+实验内容3：
+LinkList LocateElem_L(LinkList L, int sno)
